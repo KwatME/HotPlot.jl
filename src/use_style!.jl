@@ -1,12 +1,6 @@
 using Plotly: Layout, Style, use_style!
 
-layout = Layout(autosize=false)
-
-style = Style(layout=layout)
-
-use_style!(style)
-
-function set_style()
+function use_style!()
 
     layout = Layout(autosize=false)
 
@@ -16,4 +10,4 @@ function set_style()
 
 end
 
-export set_style
+export use_style!
