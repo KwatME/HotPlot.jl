@@ -1,4 +1,4 @@
-using Plotly: Layout, Style, use_style
+using Plotly: Layout, Style, use_style!
 
 layout = Layout(autosize=false)
 
@@ -6,7 +6,7 @@ style = Style(layout=layout)
 
 use_style!(style)
 
-function style()
+function set_style()
 
     layout = Layout(autosize=false)
 
@@ -16,4 +16,4 @@ function style()
 
 end
 
-export style
+export set_style
