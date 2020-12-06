@@ -30,6 +30,8 @@ add(url="https://github.com/KwatME/Plot.jl")
 
 ## Use
 
+See [examples](notebook/example.ipynb).
+
 ### Plot function
 
 #### Plot vectors as lines
@@ -51,5 +53,3 @@ add(url="https://github.com/KwatME/Plot.jl")
 ### Other function
 
 #### Use style optimized for Jupyter
-
-See [examples](notebook/example.ipynb).
