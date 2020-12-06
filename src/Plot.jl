@@ -1,6 +1,6 @@
 module Plot
 
-include("style.jl")
+include("use_style!.jl")
 include("plot_v_.jl")
 
 end
