@@ -20,6 +20,24 @@ Design rich plot templates.
 
 Make the default plot templates ready for presentation, publication, and impressing the audience.
 
+## Plot
+
+### Plot vectors as lines
+
+### Plot a matrix as heat map
+
+### Plot a matrix as bubble map
+
+### Plot numbers as histogram
+
+### Plot labels as pie
+
+### Plot labels as bar
+
+### Plot points in 2D
+
+### Plot points in 3D
+
 ## Install
 
 ```julia
