@@ -16,7 +16,9 @@ Make plots interactive.
 
 Design rich plot templates.
 
-### Make the default plot templates publication ready.
+### Minimize the time to ship.
+
+Make the default plot templates ready for presentation, publication, and impressing the audience.
 
 ## Install
 
