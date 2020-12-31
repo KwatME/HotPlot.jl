@@ -26,7 +26,7 @@ function plot_x_y(
     data = [scatter(trace) for trace in trace_]
 
     if layout === nothing
-        layout = Layout(title=title, xaxis_title=xaxis_title, yaxis_title=yaxis_title)
+        layout = Layout(title = title, xaxis_title = xaxis_title, yaxis_title = yaxis_title)
     end
 
     return display(plot(data, layout))
