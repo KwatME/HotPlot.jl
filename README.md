@@ -31,27 +31,3 @@ add(url="https://github.com/KwatME/Plot.jl")
 ## Use
 
 See [examples](notebook/example.ipynb).
-
-## TODO
-
-### Plot function
-
-#### Plot vectors as lines
-
-#### Plot a matrix as heat map
-
-#### Plot a matrix as bubble map
-
-#### Plot numbers as histogram
-
-#### Plot labels as pie
-
-#### Plot labels as bar
-
-#### Plot points in 2D
-
-#### Plot points in 3D
-
-### Other function
-
-#### Use style optimized for Jupyter
