@@ -1,7 +1,7 @@
 name = "Plot"
 uuid = "9db1e993-d40e-4a2c-9c84-e29bd56acb85"
 authors = ["kwatme <kwat.me@icloud.com>"]
-version = "0.1.0"
+version = "0.2.0"
 
 [deps]
 Plotly = "58dd65bb-95f3-509e-9936-c39a10fdeae7"
