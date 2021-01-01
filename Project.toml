@@ -4,4 +4,5 @@ authors = ["kwatme <kwat.me@icloud.com>"]
 version = "0.2.0"
 
 [deps]
+Kraft = "b1642761-704a-402e-a6ae-7cc063811e6d"
 Plotly = "58dd65bb-95f3-509e-9936-c39a10fdeae7"
