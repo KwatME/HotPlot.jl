@@ -2,7 +2,7 @@ using Plotly: Layout, attr
 
 using Kraft: merge_recursively
 
-function extend_layout(layout; kwargs...)
+function extend_layout(layout::Layout; kwargs...)::Layout
 
     new_layout = Layout()
 
