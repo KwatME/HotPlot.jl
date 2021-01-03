@@ -1,10 +1,6 @@
 using Plotly: Layout, plot, scatter
 
-Vector_ = Tuple{Vararg{Vector{<:Real}}}
-
-String_ = Tuple{Vararg{String}}
-
-function plot_x_y(x_::Vector_, y_::Vector_; name_::Union{Nothing, String_} = nothing, layout::Union{Nothing, Layout} = nothing)
+function plot_x_y(x_::Tuple{Vararg{Vector{<:Real}}}, y_::Tuple{Vararg{Vector{<:Real}}}; name_::Union{Nothing, Tuple{Vararg{String}}} = nothing, layout::Union{Nothing, Layout} = nothing)
 
     n_trace = length(x_)
 
@@ -40,7 +36,7 @@ end
 
 
 
-function plot_x_y(y_::Vector_; kwargs...)
+function plot_x_y(y_::Tuple{Vararg{Vector{<:Real}}}; kwargs...)
 
     return plot_x_y(Tuple(collect(1:length(y)) for y in y_), y_; kwargs...)
 
