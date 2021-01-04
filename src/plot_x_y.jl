@@ -29,11 +29,11 @@ function plot_x_y(
 
     trace_ = [scatter(t) for t in trace_]
 
-    #if layout === nothing
+    if layout === nothing
 
-    #    layout = Layout()
+        layout = Layout()
 
-    #end
+    end
 
     return plot(trace_, layout)
 
@@ -43,7 +43,7 @@ end
 
 function plot_x_y(y_::Tuple{Vararg{Vector{Float64}}}; kwargs...)::Any
 
-    return plot_x_y(Tuple(collect(1:length(y)) for y in y_), y_; kwargs...)
+    return plot_x_y(Tuple(collect(1.0:length(y)) for y in y_), y_; kwargs...)
 
 end
 
