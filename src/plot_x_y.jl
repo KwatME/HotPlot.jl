@@ -1,42 +1,47 @@
 using Plotly: Layout, plot, scatter
 
-function plot_x_y(x_::Tuple{Vararg{Vector{<:Real}}}, y_::Tuple{Vararg{Vector{<:Real}}}; name_::Union{Nothing, Tuple{Vararg{String}}} = nothing, layout::Union{Nothing, Layout} = nothing)
+function plot_x_y(
+    x_::Tuple{Vararg{Vector{Float64}}},
+    y_::Tuple{Vararg{Vector{Float64}}};
+    name_::Union{Nothing, Tuple{Vararg{String}}} = nothing,
+    layout::Union{Nothing, Layout} = nothing,
+ )::Any
 
-    n_trace = length(x_)
+    n = length(x_)
 
     if name_ === nothing
 
-        name_ = Tuple(string(index) for index in 1:n_trace)
+        name_ = Tuple(string(i) for i in 1:n)
 
     end
 
-    trace_ = Tuple(Dict{String, Any}() for index in 1:n_trace)
+    trace_ = Tuple(Dict{String, Any}() for i in 1:n)
 
-    for index in 1:n_trace
+    for i in 1:n
 
-        trace_[index]["x"] = x_[index]
+        trace_[i]["x"] = x_[i]
 
-        trace_[index]["y"] = y_[index]
+        trace_[i]["y"] = y_[i]
 
-        trace_[index]["name"] = name_[index]
-
-    end
-
-    traces_ = [scatter(trace) for trace in trace_]
-
-    if layout === nothing
-
-        layout = Layout()
+        trace_[i]["name"] = name_[i]
 
     end
 
-    return plot(traces_, layout)
+    trace_ = [scatter(t) for t in trace_]
+
+    #if layout === nothing
+
+    #    layout = Layout()
+
+    #end
+
+    return plot(trace_, layout)
 
 end
 
 
 
-function plot_x_y(y_::Tuple{Vararg{Vector{<:Real}}}; kwargs...)
+function plot_x_y(y_::Tuple{Vararg{Vector{Float64}}}; kwargs...)::Any
 
     return plot_x_y(Tuple(collect(1:length(y)) for y in y_), y_; kwargs...)
 
