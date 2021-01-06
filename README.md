@@ -22,6 +22,10 @@ Make the default plot templates ready for presentation, publication, and impress
 
 ## Install
 
+```sh
+julia
+```
+
 ```julia
 using Pkg: add
 
