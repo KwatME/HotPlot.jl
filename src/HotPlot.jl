@@ -1,4 +1,4 @@
-module Plot
+module HotPlot
 
 include("plot_bar.jl")
 include("plot_bubble_map.jl")
