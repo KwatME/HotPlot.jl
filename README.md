@@ -1,4 +1,4 @@
-Module for plotting.
+For plotting.
 
 ## Aim (and its design principle)
 
