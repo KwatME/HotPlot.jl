@@ -9,7 +9,7 @@ function plot_x_y(
     #
     layout::Union{Nothing, Layout} = nothing,
 )::Any
-    
+
     #
     n = length(x_)
 
