@@ -9,8 +9,6 @@ function plot_x_y(
     layout::Union{Nothing, Layout} = nothing,
 )::Any
 
-    println(typeof(x_))
-
     n = length(x_)
 
     trace_ = [Dict{String, Any}() for i in 1:n]
