@@ -3,17 +3,17 @@ using Plotly: Layout, plot, scatter
 function plot_x_y(
     x_::Vector{Vector{Float64}},
     y_::Vector{Vector{Float64}};
-    text_::Union{Nothing, Vector{Vector{String}}} = nothing,
-    name_::Union{Nothing, Vector{String}} = nothing,
-    mode_::Union{Nothing, Vector{String}} = nothing,
-    layout::Union{Nothing, Layout} = nothing,
+    text_::Union{Nothing,Vector{Vector{String}}} = nothing,
+    name_::Union{Nothing,Vector{String}} = nothing,
+    mode_::Union{Nothing,Vector{String}} = nothing,
+    layout::Union{Nothing,Layout} = nothing,
 )::Any
 
     n = length(x_)
 
-    trace_ = [Dict{String, Any}() for i in 1:n]
+    trace_ = [Dict{String,Any}() for i = 1:n]
 
-    for i in 1:n
+    for i = 1:n
 
         trace_[i]["x"] = x_[i]
 
